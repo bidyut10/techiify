@@ -1,0 +1,63 @@
+.nav-name {
+  color: #8860d0;
+}
+.nav-name1 {
+  color: #29292a;
+}
+.navbar {
+  background-color: #8860d0;
+  color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.home {
+  background-color: #30254d;
+}
+.about {
+  background-color: #ffffff;
+}
+.footer {
+  background-color: #1f2833;
+}
+
+.block {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  justify-content: center;
+}
+
+.bloc {
+  margin-top: 50px;
+  width: fit-content;
+  height: auto;
+  margin-bottom: 50px;  
+  margin-left: 50px;
+}
+
+
+@media only screen and (max-width: 1350px){
+  .block{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .block {
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .bloc{
+    margin-left: 10px;
+    display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+}
